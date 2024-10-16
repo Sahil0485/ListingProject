@@ -1,0 +1,39 @@
+
+/*
+|----------------------------------------------------------------------------
+| 11. Pagination Style
+|----------------------------------------------------------------------------
+*/
+
+@import "../variable";
+
+.pagination{
+	margin-bottom: 30px;
+	li{
+		a.page-link{
+			height: 40px;
+			width: 40px;
+			line-height: 27px;
+			text-align: center;
+			border: 1px solid $border_clr;
+			background: transparent;
+		}
+	}
+	li.active{
+		a.page-link{
+			background: $primary_clr;
+			border: 1px solid $border_clr;
+		}
+	}
+	.page-item .page-link{
+		border: 1px solid $border_clr;
+	}
+}
+.pagination.pg-round{
+	a.page-link{
+		border-radius: 50%;
+	}
+	.page-item .page-link{
+		border: none;
+	}
+}

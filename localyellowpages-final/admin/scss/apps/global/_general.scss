@@ -1,0 +1,110 @@
+/*
+|----------------------------------------------------------------------------
+| 1. General Styles
+|----------------------------------------------------------------------------
+*/
+
+@import "./variable";
+@import "./mixins";
+html, html a {
+    text-rendering: optimizeLegibility !important;
+ 	-webkit-font-smoothing: antialiased !important;
+}
+body{
+	font-family: $Poppins_font;
+	font-size: $default_fontSize;
+	line-height: $default_lineHeight;
+	color: $light_dark;
+	font-weight: 400;
+	background: transparent;
+}
+p {
+	line-height: $default_lineHeight;
+	font-size: $default_fontSize;
+	margin-bottom: 30px;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	line-height: 100%;
+	font-weight: 500;
+}
+h1 {
+	font-size: 60px;
+}
+h2 {
+	font-size: 48px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 20px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 14px;
+}
+img {
+	object-fit: cover;
+	display: inline-block;
+}
+.img-responsive{
+	max-width: 100%;
+	height: auto;
+	display:block;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	display: inline-block;
+	
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $light_dark;
+		outline: 0;
+	}
+	@include transition(0.4s);
+}
+iframe {
+    border: 0;
+}
+.breadcrumb{
+	background: transparent;
+}
+.border-right{
+	border-right: 1px solid $border_clr;
+}
+.border-left{
+	border-left: 1px solid $border_clr;
+}
+.border-top{
+	border-top: 1px solid $border_clr;
+}
+.border-bottom{
+	border-bottom: 1px solid $border_clr;
+}
+/*--- background color set ---*/
+.primary-bg{
+	background: $primary_clr;
+}
+.info-bg{
+	background: $info_clr;
+}
+.success-bg{
+	background: $success_clr;
+}
+.warning-bg{
+	background: $warning_clr;
+}
+.danger-bg{
+	background: $danger_clr;
+}
+.warning-two-bg{
+	background: $warning_two_clr;
+}
+
+.nested-box-widget{
+	margin-top: 30px;
+}

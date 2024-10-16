@@ -1,0 +1,134 @@
+
+/*
+|----------------------------------------------------------------------------
+| 9. Alert Style
+|----------------------------------------------------------------------------
+*/
+
+@import "../variable";
+
+.alert{
+	font-size: 15px;
+	color: $white_clr;
+	position: relative;
+	min-height: 50px;
+	p{
+		margin: 0;
+	}
+	.close{
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		padding: 0;
+		transform: translateY(-17px);
+		i.fa{
+			font-size: 14px;
+			line-height: 33px;
+			color: rgba(255,255,255,.5);
+		}
+	}
+	.left-icon{
+		text-align: center;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	
+}
+.alert-default{
+	padding-right: 10px;
+	.left-icon{
+		height: 35px;
+		width: 35px;
+		line-height: 32px;
+		border-radius: 50%;
+		left: 10px;
+		top: 50%;
+		transform: translateY(-17px);
+		border: 1px solid rgba(255,255,255,.5);
+	}
+	p{
+		margin-left: 35px;
+	}
+}
+.contrasts-alert{
+	p{
+		margin-left: 45px;
+	}
+}
+.alert.alert-success{
+	background: $success_clr;
+	border-bottom: 3px solid #86ad3b;
+	transition: all 0.3s ease;
+}
+.alert.alert-info{
+	background: $primary_clr;
+	border-bottom: 3px solid #d95050;
+	transition: all 0.3s ease;
+}
+.alert.alert-warning{
+	background: $warning_two_clr;
+	border-bottom: 3px solid rgba(253, 10, 10, 0.29);
+	transition: all 0.3s ease;
+}
+.alert.alert-danger{
+	background: $danger_clr;
+	border-bottom: 3px solid #d91a1a;
+	transition: all 0.3s ease;
+}
+
+.contrasts-alert{
+	.left-icon{
+		text-align:center;
+		line-height: 50px;
+		height: 50px;
+		width: 50px;
+		background: rgba(0,0,0,.10);
+	}
+}
+.contrasts-alert.transparent{
+		border: 1px solid $border_clr;
+		p{
+			color: $light_dark;
+		}
+		.close{
+			i.fa{
+				color: $border_clr;
+			}
+		}
+		.left-icon{
+			height: 49px;
+		}
+	}
+.alert-success{
+	.color-bg{
+		background: $success_clr;
+	}
+	.color-icon{
+		color: $success_clr;
+	}
+}
+.alert-info{
+	.color-bg{
+		background: $primary_clr;
+	}
+	.color-icon{
+		color: $primary_clr;
+	}
+}
+.alert-warning{
+	.color-bg{
+		background: $warning_two_clr;
+	}
+	.color-icon{
+		color: $warning_two_clr;
+	}
+}
+.alert-danger{
+	.color-bg{
+		background: $danger_clr;
+	}
+	.color-icon{
+		color: $danger_clr;
+	}
+}

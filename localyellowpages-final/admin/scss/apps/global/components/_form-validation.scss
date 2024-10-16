@@ -1,0 +1,21 @@
+/*
+|----------------------------------------------------------------------------
+| 20. Form-validations Style
+|----------------------------------------------------------------------------
+*/
+@import "../variable";
+@import "../mixins";
+.form-group.mrg-b-0{
+	margin-bottom: 0;
+}
+.valided-form{
+	.password-confirm-block{
+		[class*='col-']{
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+	.form-group label{
+		color: $lime_dark_clr;
+	}
+}

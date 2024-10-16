@@ -1,0 +1,67 @@
+
+/*
+|----------------------------------------------------------------------------
+| 6. Weather Style
+|----------------------------------------------------------------------------
+*/
+
+
+@import "../variable";
+.weather-blcok {
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.temparature-block{
+	width: 55%;
+	padding: 48px 40px;
+	display: inline-block;
+	vertical-align: top;
+	background: url(../images/weather/weather_bg.jpg) center center;
+	img{
+		margin-bottom: 40px;
+	}
+	h2,h4{
+		font-weight: 400;
+		color: #fff;
+	}
+	span{
+		color: #fff;
+		font-weight: 300;
+		display: block;
+		margin-bottom: 50px;
+	}
+	h4{
+		font-size: 24px;
+		margin-bottom: 4px;
+	}
+	h2 {
+		font-size: 55px;
+	}
+}
+.forcast-block{
+	width: 45%;
+	display: inline-block;
+	padding: 30px;
+	background: $white_clr;
+	border: 1px solid $border_clr;
+	border-left: none;
+}
+.forcast{
+	p,.forcast-icon{
+		display: inline-block;
+	}
+	p{
+		margin-bottom: 27px;
+	}
+	.forcast-day,
+	.forcast-icon{
+		width: 35px;
+		margin-right: 35px;
+	}
+	&:last-of-type{
+		p{
+			margin-bottom: 0;
+		}
+	}
+}

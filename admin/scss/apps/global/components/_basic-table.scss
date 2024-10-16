@@ -1,0 +1,69 @@
+
+/*
+|----------------------------------------------------------------------------
+| 14. Basic-table Style
+|----------------------------------------------------------------------------
+*/
+
+
+@import "../variable";
+
+.checkbox label,
+.radio label,
+label{
+	color: $light_dark;
+}
+table.dataTable tbody th,
+table.dataTable tbody td {
+    padding: 13px 10px;
+}
+table.dataTable thead th,
+table.dataTable thead td{
+	border-bottom: 1px solid $border_clr;
+    border-top: none;
+ }
+ table.dataTable.no-footer {
+    border-bottom: 1px solid $border_clr;
+}
+ table.dataTable tbody td.select-checkbox:before, 
+ table.dataTable tbody td.select-checkbox:after,
+ table.dataTable tbody th.select-checkbox:before,
+ table.dataTable tbody th.select-checkbox:after{
+	width: 20px;
+    height: 20px;
+ }
+table.dataTable tbody td.select-checkbox:before,
+ table.dataTable tbody th.select-checkbox:before {
+    content: ' ';
+    margin-top: 0px;
+    margin-left: -10px;
+    border: 1px solid $border_clr  ;
+    border-radius: 0px;
+}
+
+table.dataTable tr.selected td.select-checkbox:after, 
+table.dataTable tr.selected th.select-checkbox:after {
+	margin-top: -1px;
+    margin-left: -9px;
+}
+
+.responsive-table-block  td.center {
+    text-align: center;
+}
+a.editor_edit,
+a.editor_remove {
+	padding: 7px 9px;
+	margin: 0 5px;
+	text-align: center;
+	border-radius: 50%;
+}
+a.editor_edit{
+	background: $primary_clr;
+}
+a.editor_remove{
+	background: $warning_clr;
+}
+a.editor_edit i.fa,
+a.editor_remove i.fa{
+	color: $white_clr;
+}

@@ -1,0 +1,164 @@
+
+/*
+|----------------------------------------------------------------------------
+| 24. Mail-view Style
+|----------------------------------------------------------------------------
+*/
+
+@import "../variable";
+@import "../mixins";
+.inbox-view-mail-wrap{
+	padding-right: 0;
+}
+.inbox-view-wrap{
+	padding-left: 0;
+}
+.inbox-author-block{
+	width: 38%;
+	display: inline-block;
+	img,
+	div{
+		display: inline-block;
+	}
+	img{
+		height: 50px;
+		width: 50px;
+		margin-right: 13px;
+		border-radius: 50%;
+		border: 3px solid #ffbcbc;
+		vertical-align: top;
+		margin-top: -5px;
+	}
+	h5,p{
+		margin-bottom: 0;
+	}
+	h5{
+		font-wight: 600;
+	}
+	p{
+		font-size: 14px;
+	}
+}
+.inbox-info-block{
+	width: 61.6%;
+	display: inline-block;
+	text-align: right;
+	.dropdown-menu{
+		min-width: 0;
+	}
+	.dropdown-large .btn.dropdown-toggle{
+		background: none;
+	}
+	.btn-group.right{
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+.info-star{
+	margin-left: 10px;
+}
+.inbox-view-header{
+	padding: 0 25px 5px 25px;
+}
+.inbox-view{
+	padding: 30px 40px 40px 25px;
+	.inbox-title{
+		font-size: 16px;
+		font-weight: 600;
+		margin-bottom: 40px;
+	}
+	.text-highlight-one{
+		margin-bottom: 12px;
+	}
+}
+.regards-block{
+	margin-top: -5px;
+	h6{
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
+.regards-block>h6{
+	margin-bottom: 15px;
+}
+.attachment-area{
+	margin-top: 55px;
+	margin-bottom: 25px;
+	.attachment-block{
+		width: 20%;
+		display: inline-block;
+		margin-right: 20px;
+	}
+}
+.attachment-title{
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 25px;
+	span{
+		font-size: 14px;
+		font-weight: 400;
+	}
+	a{
+		color: $primary_clr;
+		font-size: 14px;
+		font-weight: 400;
+		&:hover{
+			color: $primary_clr;
+		}
+	}
+}
+.attachment-info>h6{
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	span{
+		font-size: 13px;
+		font-weight: 400;
+	}
+}
+.attachment-info{
+	border: 1px solid $border_clr;
+	border-top: none;
+	padding: 13px 20px 12px 13px;
+	ul{
+		margin-bottom: 0;
+		li{
+			display: inline-block;
+			position: relative;
+			&:first-child{
+				margin-right: 22px;
+				&:before{
+					content: '';
+					height: 11px;
+					width: 2px;
+					position: absolute;
+					right: -14px;
+					top: 2px;
+					background: $border_clr;
+				}
+			}
+			a{
+				color: $primary_clr;
+				&:hover{
+					color: $primary_clr;
+				}
+			}
+		}
+		
+	}
+}
+.inbox-replay-block{
+	padding: 20px;
+	height: 125px;
+	border: 1px solid $border_clr;
+	h5{
+		font-size: 15px;
+		font-weight: 400;
+		a{
+			color: $primary_clr;
+			&:hover{
+				color: $primary_clr;
+			}
+		}
+	}
+}

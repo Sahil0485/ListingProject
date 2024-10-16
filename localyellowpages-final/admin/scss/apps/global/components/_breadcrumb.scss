@@ -1,0 +1,23 @@
+
+/*
+|----------------------------------------------------------------------------
+| 4. Breadcrumb Style
+|----------------------------------------------------------------------------
+*/
+
+@import "../variable";
+
+.breadcrumb-item+.breadcrumb-item::before{
+	content: "\e661";
+	font-family: 'themify';
+}
+.page-title-block{
+	padding: 30px 60px;
+}
+.breadcrumb{
+	padding: 0;
+	margin: 0;
+	.breadcrumb-item.active{
+		color: $primary_clr;
+	}
+}

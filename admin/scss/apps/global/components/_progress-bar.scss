@@ -1,0 +1,68 @@
+
+/*
+|----------------------------------------------------------------------------
+| 12. Progress-bar Style
+|----------------------------------------------------------------------------
+*/
+
+@import "../variable";
+
+.progress{
+	height: 10px;
+	margin-bottom: 30px;
+	background: #ececec;
+	border-radius: 3px;
+	font-size: 10px;
+	line-height: 10px;
+	font-family: $roboto_font;
+}
+.progress{
+	.primary-bg{
+		background: $primary_clr;
+	}
+	.info-bg{
+		background: $info_clr;
+	}
+	.success-bg{
+		background: $success_clr;
+	}
+	.warning-bg{
+		background: $warning_clr;
+	}
+	.warning-two-bg{
+		background: $warning_two_clr;
+	}
+	.progress-bar-striped{
+		background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+		background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+		background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+		-webkit-background-size: 1rem 1rem;
+		background-size: 1rem 1rem;
+	}
+}
+.progress.thin{
+	height: 6px;
+	margin-bottom: 25px;
+}
+.progress.semi-bold{
+	height: 15px;
+	margin-bottom: 25px;
+	line-height: 17px;
+	font-size: 12px;
+}
+.progress.bold{
+	height: 20px;
+	margin-bottom: 25px;
+	line-height: 22px;
+	font-size: 14px;
+}
+.progress.bolder{
+	height: 25px;
+	margin-bottom: 25px;
+	font-size: 16px;
+	line-height: 27px;
+}
+.progress-bar{
+	height: 100%;
+}
+

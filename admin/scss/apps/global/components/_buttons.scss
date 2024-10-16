@@ -1,0 +1,505 @@
+
+/*
+|----------------------------------------------------------------------------
+| 10. Buttons Style
+|----------------------------------------------------------------------------
+*/
+
+@import "../variable";
+
+.btn, 
+.input-group-btn .btn{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 3px;
+	margin: 15px 6px;
+	padding: 0;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: $roboto_font;
+	text-transform: capitalize;
+}
+.btn:hover,
+.btn:focus,
+.btn:active{
+	text-decoration: none;
+}
+.btn-rounded{
+	border-radius: 10em;
+}
+
+.btn:not(.btn-raised).btn-primary, 
+.input-group-btn .btn:not(.btn-raised).btn-primary{
+	color: $white_clr;
+}
+
+.btn:not(.btn-raised):not(.btn-link):focus, 
+.btn:not(.btn-raised):not(.btn-link):hover,
+.input-group-btn .btn:not(.btn-raised):not(.btn-link):focus, 
+.input-group-btn .btn:not(.btn-raised):not(.btn-link):hover,
+.btn.btn-raised:not(.btn-link):hover{
+	background: transparent;
+}
+.btn,
+.btn-group-raised .btn:not(.btn-link), 
+.btn-group-raised .input-group-btn .btn:not(.btn-link),
+.btn.btn-raised:not(.btn-link), 
+.input-group-btn .btn.btn-raised:not(.btn-link),
+.btn-link:hover,
+.btn:hover,
+.btn:active{
+	box-shadow: none;
+}
+.btn.btn-raised.btn-link,
+.btn-link{
+	background-color: #fff;
+    color: $primary_clr;
+	transition: all 0.3s ease-in;
+	&:hover{
+		    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+	}
+}
+
+.btn-group-raised .btn.btn-default, 
+.btn:not(.btn-raised):not(.btn-link).active.btn-default,
+.btn:not(.btn-raised):not(.btn-link):active.btn-default,
+.btn:not(.btn-raised):not(.btn-link):focus.btn-default,
+.btn:not(.btn-raised):not(.btn-link):hover.btn-default{
+	background: $default_gray;
+}
+
+.btn-group-raised .btn.btn-danger, 
+.btn-group-raised .input-group-btn .btn.btn-danger, 
+.btn.btn-fab.btn-danger, .btn.btn-raised.btn-danger,
+.input-group-btn .btn.btn-fab.btn-danger, 
+.input-group-btn .btn.btn-raised.btn-danger,
+.btn:not(.btn-raised):not(.btn-link).active.btn-danger,
+.btn:not(.btn-raised):not(.btn-link):active.btn-danger,
+.btn:not(.btn-raised):not(.btn-link):focus.btn-danger,
+.btn:not(.btn-raised):not(.btn-link):hover.btn-danger{
+	background: $danger_clr;
+}
+.btn-danger:focus, .btn-danger:hover{
+	background: rgba(255, 31, 31, 0.85);
+}
+.btn-group-raised .btn.btn-warning,
+.btn-group-raised .input-group-btn .btn.btn-warning,
+.btn.btn-fab.btn-warning,
+.btn.btn-raised.btn-warning,
+.input-group-btn .btn.btn-fab.btn-warning, 
+.input-group-btn .btn.btn-raised.btn-warning,
+.btn-group-vertical.open>.dropdown-toggle.btn.btn-warning,
+.btn-group.open>.dropdown-toggle.btn.btn-warning{
+	background: $warning_clr;
+}
+.btn-group-raised .btn:not(.btn-link).active.btn-warning, 
+.btn-group-raised .btn:not(.btn-link):active.btn-warning, 
+.btn-group-raised .btn:not(.btn-link):focus.btn-warning, 
+.btn-group-raised .btn:not(.btn-link):hover.btn-warning, 
+.btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-warning,
+.btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-warning, 
+.btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-warning, 
+.btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-warning, 
+.btn.btn-raised:not(.btn-link).active.btn-warning, 
+.btn.btn-raised:not(.btn-link):active.btn-warning, 
+.btn.btn-raised:not(.btn-link):focus.btn-warning, 
+.btn.btn-raised:not(.btn-link):hover.btn-warning, 
+.input-group-btn .btn.btn-raised:not(.btn-link).active.btn-warning, 
+.input-group-btn .btn.btn-raised:not(.btn-link):active.btn-warning, 
+.input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-warning, 
+.input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-warning,
+.btn-warning:focus, .btn-warning:hover,
+.btn:not(.btn-raised):not(.btn-link).active.btn-warning,
+.btn:not(.btn-raised):not(.btn-link):active.btn-warning,
+.btn:not(.btn-raised):not(.btn-link):focus.btn-warning,
+.btn:not(.btn-raised):not(.btn-link):hover.btn-warning{
+	background-color: rgba(255, 121, 121, 0.83);
+}
+
+.btn-primary,
+.btn-group-raised .btn.btn-primary, 
+.btn-group-raised .input-group-btn .btn.btn-primary, 
+.btn.btn-fab.btn-primary, .btn.btn-raised.btn-primary, 
+.input-group-btn .btn.btn-fab.btn-primary,
+.input-group-btn .btn.btn-raised.btn-primary,
+.btn-group-raised .btn:not(.btn-link).active.btn-primary,
+.btn-group-raised .btn:not(.btn-link):active.btn-primary,
+.btn-group-raised .btn:not(.btn-link):focus.btn-primary,
+.btn-group-raised .btn:not(.btn-link):hover.btn-primary,
+.btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-primary,
+.btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-primary,
+.btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-primary,
+.btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-primary,
+.btn.btn-raised:not(.btn-link).active.btn-primary,
+.btn.btn-raised:not(.btn-link):active.btn-primary, 
+.btn.btn-raised:not(.btn-link):focus.btn-primary,
+.btn.btn-raised:not(.btn-link):hover.btn-primary,
+.input-group-btn .btn.btn-raised:not(.btn-link).active.btn-primary,
+.input-group-btn .btn.btn-raised:not(.btn-link):active.btn-primary,
+.input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-primary,
+.input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-primary,
+.btn:not(.btn-raised):not(.btn-link).active.btn-primary,
+.btn:not(.btn-raised):not(.btn-link):active.btn-primary,
+.btn:not(.btn-raised):not(.btn-link):focus.btn-primary,
+.btn:not(.btn-raised):not(.btn-link):hover.btn-primary{
+	background-color: $primary_clr;
+}
+
+.btn-group-raised .btn.btn-success,
+.btn-group-raised .input-group-btn .btn.btn-success,
+.btn.btn-fab.btn-success,
+.btn.btn-raised.btn-success, 
+.input-group-btn .btn.btn-fab.btn-success,
+.input-group-btn .btn.btn-raised.btn-success,
+.btn-group-raised .btn:not(.btn-link).active.btn-success, 
+.btn-group-raised .btn:not(.btn-link):active.btn-success, 
+.btn-group-raised .btn:not(.btn-link):focus.btn-success, 
+.btn-group-raised .btn:not(.btn-link):hover.btn-success, 
+.btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-success, 
+.btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-success, 
+.btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-success, 
+.btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-success, 
+.btn.btn-raised:not(.btn-link).active.btn-success, 
+.btn.btn-raised:not(.btn-link):active.btn-success, 
+.btn.btn-raised:not(.btn-link):focus.btn-success, 
+.btn.btn-raised:not(.btn-link):hover.btn-success, 
+.input-group-btn .btn.btn-raised:not(.btn-link).active.btn-success, 
+.input-group-btn .btn.btn-raised:not(.btn-link):active.btn-success, 
+.input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-success, 
+.input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-success,
+.btn:not(.btn-raised):not(.btn-link).active.btn-success,
+.btn:not(.btn-raised):not(.btn-link):active.btn-success,
+.btn:not(.btn-raised):not(.btn-link):focus.btn-success,
+.btn:not(.btn-raised):not(.btn-link):hover.btn-success{
+	background-color: $success_clr;
+}
+/*--- outline button ---*/
+
+.btn-outline-default,
+.btn-outline-default:active, 
+.btn-outline-default:active:focus, 
+.btn-outline-default:focus, 
+.btn-outline-default:hover{
+	color: $lime_dark_clr;
+	border: 1px solid $border_clr;
+}
+.btn-outline-primary,
+.btn-outline-primary:active, 
+.btn-outline-primary:active:focus, 
+.btn-outline-primary:focus, 
+.btn-outline-primary:hover{
+	color: $primary_clr;
+	border: 1px solid $primary_clr;
+}
+.btn-outline-success,
+.btn-outline-success:active, 
+.btn-outline-success:active:focus, 
+.btn-outline-success:focus, 
+.btn-outline-success:hover{
+	color: $success_clr;
+	border: 1px solid $success_clr;
+}
+
+.btn-success:active,
+.btn-success:focus,
+.btn-success:hover{
+	background:  rgba(157, 203, 69, 0.75);
+}
+
+.btn-outline-info,
+.btn-outline-info:active, 
+.btn-outline-info:active:focus, 
+.btn-outline-info:focus, 
+.btn-outline-info:hover{
+	color: $info_clr;
+	border: 1px solid $info_clr;
+}
+
+.btn-outline-danger,
+.btn-outline-danger:active, 
+.btn-outline-danger:active:focus, 
+.btn-outline-danger:focus, 
+.btn-outline-danger:hover{
+	color: $danger_clr;
+	border: 1px solid $danger_clr;
+}
+
+.btn-outline-warning,
+.btn-outline-warning:active, 
+.btn-outline-warning:active:focus, 
+.btn-outline-warning:focus, 
+.btn-outline-warning:hover{
+	color: $warning_clr;
+	border: 1px solid $warning_clr;
+}
+
+.btn-outline-dsable,
+.btn-outline-dsable:active, 
+.btn-outline-dsable:active:focus, 
+.btn-outline-dsable:focus, 
+.btn-outline-dsable:hover{
+	color: $disable_clr;
+	border: 1px solid $disable_clr;
+}
+.btn.btn-xs{
+	width: 85px;
+	padding: 0;
+	font-size: 15px;
+}
+.btn.btn-sm{
+	width: 100px;
+	padding: 0;
+	font-size: 15px;
+}
+.btn-block .btn.btn-ex-one,
+.panel-body .btn.btn-ex-one,
+.btn-group-raised .btn:not(.btn-link).active.btn-ex-one,
+.btn-group-raised .btn:not(.btn-link):active.btn-ex-one,
+.btn-group-raised .btn:not(.btn-link):focus.btn-ex-one,
+.btn-group-raised .btn:not(.btn-link):hover.btn-ex-one, 
+.btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-ex-one, 
+.btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-ex-one,
+.btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-ex-one,
+.btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-ex-one, 
+.btn.btn-raised:not(.btn-link).active.btn-ex-one,
+.btn.btn-raised:not(.btn-link):active.btn-ex-one,
+.btn.btn-raised:not(.btn-link):focus.btn-ex-one,
+.btn.btn-raised:not(.btn-link):hover.btn-ex-one,
+.input-group-btn .btn.btn-raised:not(.btn-link).active.btn-ex-one, 
+.input-group-btn .btn.btn-raised:not(.btn-link):active.btn-ex-one, 
+.input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-ex-one,
+.input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-ex-one,
+.btn:not(.btn-raised):not(.btn-link).active.btn-ex-one,
+.btn:not(.btn-raised):not(.btn-link):active.btn-ex-one,
+.btn:not(.btn-raised):not(.btn-link):focus.btn-ex-one,
+.btn:not(.btn-raised):not(.btn-link):hover.btn-ex-one{
+	background: $info2_clr;
+	color: $white_clr;
+}
+.btn.btn-md{
+	width: 120px;
+	padding: 0;
+	font-size: 15px;
+}
+.btn-ex-one:active,
+.btn-ex-one:focus,
+.btn-ex-one:hover{
+	background-color: rgba(131, 233, 210, 0.76);
+}
+.btn.btn-lg{
+	width: 140px;
+	padding: 0;
+	font-size: 15px;
+}
+
+/*-- button height --*/
+.btn-h-md{
+	height: 35px;
+	line-height: 10px;
+}
+.btn-h-sm{
+	height: 30px;
+	line-height: 8px;
+}
+.btn-h-xs{
+	height: 25px;
+	line-height: 7px;
+}
+
+/*-- dropdown button style --*/
+.dropdown-large {
+	.btn.dropdown-toggle{
+		width: 35px;
+		background: $primary_clr;
+	}
+	.btn-outline-primary.dropdown-toggle{
+		background: transparent;
+	}
+}
+
+.btn-group{
+	.dropdown-menu{
+		li a{
+			padding: 3px 20px;
+			clear: both;
+			font-weight: 400;
+			line-height: 1.42857143;
+			color: #333;
+			white-space: nowrap;
+		}
+	}
+}
+
+.btn-block{
+	width: 100%;
+	margin: 15px 0;
+}
+
+/*-- round button style --*/
+.btn.btn-fab{
+	margin: 7px;
+}
+.btn-default.btn-fab{
+	i.fa{
+		color: $light_dark;
+	}
+}
+.btn-h-sm.btn-fab{
+	height: 35px;
+	width: 35px;
+	min-width: 35px;
+	i.fa{
+		font-size: 14px;
+		line-height: 37px;
+	}
+}
+.btn-h-sm.btn-fab.btn-default{
+	i.fa{
+		line-height: 40px;
+	}
+}
+.btn-h-md.btn-fab{
+	height: 50px;
+	width: 50px;
+	min-width: 50px;
+	i.fa{
+		font-size: 18px;
+		line-height: 50px;
+	}
+}
+.btn-h-md.btn-fab.btn-default{
+	i.fa{
+		line-height: 55px;
+	}
+}
+.btn-h-lg.btn-fab{
+	height: 70px;
+	width: 70px;
+	min-width: 70px;
+	i.fa{
+		font-size: 24px;
+		line-height: 70px;
+	}
+}
+.btn-h-lg.btn-fab.btn-default{
+	i.fa{
+		line-height: 75px;
+	}
+}
+.btn-one-third-group{
+	width: 99%;
+	.btn-one-third{
+		width: 100%;
+	}
+}
+
+.btn-group.block{
+	a{
+		display: block;
+	}
+}
+
+/*-- social button style --*/
+
+a[class*='icon-btn-sqr-'].btn{
+	width: 40px;
+	height: 40px;
+	color: $white_clr;
+}
+a[class*='icon-btn-round-'].btn{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: $white_clr;
+}
+
+a[class*='-fb'].btn,
+a[class*='-fb'].btn.btn:not(.btn-raised):not(.btn-link).active,
+a[class*='-fb'].btn.btn:not(.btn-raised):not(.btn-link):active,
+a[class*='-fb'].btn.btn:not(.btn-raised):not(.btn-link):focus,
+a[class*='-fb'].btn.btn:not(.btn-raised):not(.btn-link):hover{
+	background: $facebook_clr;
+}
+a[class*='-tw'].btn,
+a[class*='-tw'].btn.btn:not(.btn-raised):not(.btn-link).active,
+a[class*='-tw'].btn.btn:not(.btn-raised):not(.btn-link):active,
+a[class*='-tw'].btn.btn:not(.btn-raised):not(.btn-link):focus,
+a[class*='-tw'].btn.btn:not(.btn-raised):not(.btn-link):hover{
+	background: $twitter_clr;
+}
+a[class*='-gplus'].btn,
+a[class*='-gplus'].btn.btn:not(.btn-raised):not(.btn-link).active,
+a[class*='-gplus'].btn.btn:not(.btn-raised):not(.btn-link):active,
+a[class*='-gplus'].btn.btn:not(.btn-raised):not(.btn-link):focus,
+a[class*='-gplus'].btn.btn:not(.btn-raised):not(.btn-link):hover{
+	background: $google_plus_clr;
+}
+a[class*='-pin'].btn,
+a[class*='-pin'].btn.btn:not(.btn-raised):not(.btn-link).active,
+a[class*='-pin'].btn.btn:not(.btn-raised):not(.btn-link):active,
+a[class*='-pin'].btn.btn:not(.btn-raised):not(.btn-link):focus,
+a[class*='-pin'].btn.btn:not(.btn-raised):not(.btn-link):hover{
+	background: $pintterest_clr;
+}
+a[class*='-linkedin'].btn,
+a[class*='-linkedin'].btn.btn:not(.btn-raised):not(.btn-link).active,
+a[class*='-linkedin'].btn.btn:not(.btn-raised):not(.btn-link):active,
+a[class*='-linkedin'].btn.btn:not(.btn-raised):not(.btn-link):focus,
+a[class*='-linkedin'].btn.btn:not(.btn-raised):not(.btn-link):hover{
+	background: $linkdin_clr; 
+}
+a[class*='-ins'].btn,
+a[class*='-ins'].btn.btn:not(.btn-raised):not(.btn-link).active,
+a[class*='-ins'].btn.btn:not(.btn-raised):not(.btn-link):active,
+a[class*='-ins'].btn.btn:not(.btn-raised):not(.btn-link):focus,
+a[class*='-ins'].btn.btn:not(.btn-raised):not(.btn-link):hover{
+	background: $instagram_clr;
+}
+a[class*='-dribbble'].btn,
+a[class*='-dribbble'].btn.btn:not(.btn-raised):not(.btn-link).active,
+a[class*='-dribbble'].btn.btn:not(.btn-raised):not(.btn-link):active,
+a[class*='-dribbble'].btn.btn:not(.btn-raised):not(.btn-link):focus,
+a[class*='-dribbble'].btn.btn:not(.btn-raised):not(.btn-link):hover{
+	background: $dribbble_clr;
+}
+a[class*='-bhnc'].btn,
+a[class*='-bhnc'].btn.btn:not(.btn-raised):not(.btn-link).active,
+a[class*='-bhnc'].btn.btn:not(.btn-raised):not(.btn-link):active,
+a[class*='-bhnc'].btn.btn:not(.btn-raised):not(.btn-link):focus,
+a[class*='-bhnc'].btn.btn:not(.btn-raised):not(.btn-link):hover{
+	background: $behance_clr;
+}
+a[class*='-yt'].btn,
+a[class*='-yt'].btn.btn:not(.btn-raised):not(.btn-link).active,
+a[class*='-yt'].btn.btn:not(.btn-raised):not(.btn-link):active,
+a[class*='-yt'].btn.btn:not(.btn-raised):not(.btn-link):focus,
+a[class*='-yt'].btn.btn:not(.btn-raised):not(.btn-link):hover{
+	background: $youtube_clr;
+}
+.bs-component{
+	margin-bottom: 35px;
+}
+div[class^='social-icon-btn-group']{
+	margin-bottom: 10px;
+}
+
+.vertical-btn{
+	width: 50px;
+	height: 117px;
+	span{
+		display: block;
+		width: 111px;
+		transform: translate(-31px,38px) rotate(-89deg);
+	}
+}
+.btn.btn-raised{
+	background: transparent;
+}
+.btn-icon{
+	height: 40px;
+	width: 45px;
+}
+a[class*='icon-btn-detail-'].btn{
+	color: $white_clr;
+}

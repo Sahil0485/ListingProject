@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ListingGEO - Directory Listing Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="location listing creative">
+    <meta name="author" content="CodePassenger">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type='text/css'>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!-- BX Slider CSS -->
+    <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="main-wrap">
+        <!-- Main Navigation -->
+        <div class="main-nav-section">
+            <div class="user-panel">
+                <a href="login.html" class="user-login-btn border-btn">
+                    <i class="fa fa-user-o" aria-hidden="true"></i> Log in
+                </a>
+                <a href="add-listing.html" class="user-addlisting-btn">
+                    <i class="fa fa-plus" aria-hidden="true"></i> Add Listing
+                </a>
+            </div>
+            <nav class="navbar navbar-toggleable-md fixed-top">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars navbar-toggle-btn" aria-hidden="true"></i>
+                </button>
+                <a class="navbar-brand" href="home-one.html">
+                    <img src="images/logo.png" alt="img" class="img-responsive">
+                </a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="listing-map-left.html"
+                                id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Explore
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <li><a class="dropdown-item" href="listing-map-left.html">Map Left</a></li>
+                                <li><a class="dropdown-item" href="listing-map-right.html">Map Right</a></li>
+                                <li><a class="dropdown-item" href="listing-map-full.html">Map Fullwidth</a></li>
+                                <li><a class="dropdown-item" href="single-listing.html">Listing Details</a></li>
+                                <li><a class="dropdown-item" href="add-listing.html">Add Listing</a></li>
+                                <li><a class="dropdown-item" href="favorite-listing.html">Favorite Listings</a></li>
+                                <li><a class="dropdown-item" href="single.html">Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="home-one.html" id="navbarDropdownMenuLink2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                <li><a class="dropdown-item" href="home-one.html">Home One</a></li>
+                                <li><a class="dropdown-item" href="home-two.html">Home Two</a></li>
+                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="working-process.html">How It Works</a></li>
+                                <li><a class="dropdown-item" href="packages.html">Listing Package</a></li>
+                                <li><a class="dropdown-item" href="gallery.html">Photo Gallery</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="404.html">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="dshboard.html" id="navbarDropdownMenuLink3"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dashboard
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                                <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="dashboard-all-listing.html">All listings</a></li>
+                                <li><a class="dropdown-item" href="dashboard-new-listing.html">Add new listings</a></li>
+                                <li><a class="dropdown-item" href="dashboard-active-listing.html">Active Listings</a>
+                                </li>
+                                <li><a class="dropdown-item" href="dashboard-expired-listing.html">Expired Listings</a>
+                                </li>
+                                <li><a class="dropdown-item" href="dashboard-favorites-listing.html">My Favorites</a>
+                                </li>
+                                <li><a class="dropdown-item" href="dashboard-all-review.html">All Reviews</a></li>
+                                <li><a class="dropdown-item" href="dashboard-my-review.html">My Reviews</a></li>
+                                <li><a class="dropdown-item" href="dashboard-all-message.html">All Messages</a></li>
+                                <li><a class="dropdown-item" href="dashboard-unread-message.html">Unread Messages</a>
+                                </li>
+                                <li><a class="dropdown-item" href="dashboard-checkout.html">Checkout</a></li>
+                                <li><a class="dropdown-item" href="dashboard-package-plan.html">Package Plan</a></li>
+                                <li><a class="dropdown-item" href="dashboard-invoices.html">Invoices</a></li>
+                                <li><a class="dropdown-item" href="dashboard-add-campaign.html">Add Campaign</a></li>
+                                <li><a class="dropdown-item" href="dashboard-claim-refund.html">Claim & Refund</a></li>
+                                <li><a class="dropdown-item" href="dashboard-settings.html">Settings</a></li>
+                                <li><a class="dropdown-item" href="dashboard-profile.html">My Profile</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- main nav section -->
+        <div class="subheader">
+            <h2>Privacy Policy</h2>
+            <div class="overlay"></div>
+        </div>
+        <div class="breadcrumb-block">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Privacy Policy</li>
+                </ol>
+                <div class="breadcrumb-call-to-action">
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> +1-0000-000-000</p>
+                    <a href="javascript:void(0)" class="contact-btn">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="single-post-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 push-lg-3">
+                        <article class="single-post">
+                            <div class="about-us-content">
+                                <div class="heading-panel">
+
+                                    <h3 class="main-title text-left">
+                                        Privacy Policy </h3>
+                                </div>
+
+                                <h3 style="text-align:justify"><strong>1. WHAT DO WE DO WITH YOUR INFORMATION?</strong>
+                                </h3>
+
+                                <p style="text-align:justify">When you register with or purchase something from our
+                                    website www.Yellowpages.in, as part of the registration or buying and selling
+                                    process, we collect the personal information you give us such as your name, address,
+                                    email address and other data such as (but not limited to) location, photographs and
+                                    social media details.</p>
+
+                                <p style="text-align:justify">When you browse our website or contribute content such as
+                                    ratings, comments, testimonials, we also automatically receive your computer’s
+                                    internet protocol (IP) address in order to provide us with information that helps us
+                                    learn about your browser and operating system.</p>
+
+                                <p style="text-align:justify">Email marketing: With your permission, we may send you
+                                    emails about our website, new products and other updates.</p>
+
+                                <p style="text-align:justify">We also communicate with the users through in-app (mobile
+                                    application) notifications, SMS, email which may lead to data collected by us from
+                                    the user such as permissions for sending offers/information from our partners,
+                                    opinion polls etc</p>
+
+                                <p style="text-align:justify">We show online advertisements &amp; use tracking tools
+                                    including Google Analytics, cookie tracking, location tracking &amp; access to your
+                                    phone book (after receiving your explicit consent) &amp; other behavioural tracking
+                                    when you are using our website or mobile application.</p>
+
+                                <h3 style="text-align:justify"><strong>2. CONSENT</strong></h3>
+
+                                <h4 style="text-align:justify">2.1 How do you get my consent?</h4>
+
+                                <p style="text-align:justify">When you provide us with personal information to complete
+                                    a transaction, verify your credit card, place an order, arrange for a delivery or
+                                    return a purchase, we imply that you consent to our collecting it and using it for
+                                    that specific reason only.</p>
+
+                                <p style="text-align:justify">If we ask for your personal information for a secondary
+                                    reason, like marketing, we will either ask you directly for your expressed consent,
+                                    or provide you with an opportunity to say no.</p>
+
+                                <h4 style="text-align:justify">2.2 How do I withdraw my consent?</h4>
+
+                                <p style="text-align:justify">If after you opt-in, you change your mind, you may
+                                    withdraw your consent for us to contact you, for the continued collection, use or
+                                    disclosure of your information, at anytime, by contacting us at
+                                    info@localyellowpages.co.inor mailing us at: Localyellowpages.co.in</p>
+
+                                <h3 style="text-align:justify"><strong>3. DISCLOSURE</strong></h3>
+
+                                <p style="text-align:justify">We may disclose your personal information if we are
+                                    required by law to do so or if you violate our Terms of Service.</p>
+
+                                <h3 style="text-align:justify"><strong>4. PAYMENT</strong></h3>
+
+                                <p style="text-align:justify">We use Pay U Money for processing payments. We/Pay U Money
+                                    do not store your card data on their servers. The data is encrypted through the
+                                    Payment Card Industry Data Security Standard (PCI-DSS) when processing payment. Your
+                                    purchase transaction data is only used as long as is necessary to complete your
+                                    purchase transaction. After that is complete, your purchase transaction information
+                                    is not saved.</p>
+
+                                <p style="text-align:justify">Our payment gateway adheres to the standards set by
+                                    PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of
+                                    brands like Visa, MasterCard, American Express and Discover.</p>
+
+                                <p style="text-align:justify">PCI-DSS requirements help ensure the secure handling of
+                                    credit card information by our website and its service providers.</p>
+
+                                <p style="text-align:justify">For more insight, you may also want to read terms and
+                                    conditions of Pay U Money on their website www. https://www.payumoney.com/.</p>
+
+                                <h3 style="text-align:justify"><strong>5. THIRD-PARTY SERVICES</strong></h3>
+
+                                <p style="text-align:justify">In general, the third-party providers used by us will only
+                                    collect, use and disclose your information to the extent necessary to allow them to
+                                    perform the services they provide to us.</p>
+
+                                <p style="text-align:justify">However, certain third-party service providers, such as
+                                    payment gateways and other payment transaction processors, have their own privacy
+                                    policies in respect to the information we are required to provide to them for your
+                                    purchase-related transactions.</p>
+
+                                <p style="text-align:justify">For these providers, we recommend that you read their
+                                    privacy policies so you can understand the manner in which your personal information
+                                    will be handled by these providers.</p>
+
+                                <p style="text-align:justify">In particular, remember that certain providers may be
+                                    located in or have facilities that are located a different jurisdiction than either
+                                    you or us. So if you elect to proceed with a transaction that involves the services
+                                    of a third-party service provider, then your information may become subject to the
+                                    laws of the jurisdiction(s) in which that service provider or its facilities are
+                                    located.</p>
+
+                                <p style="text-align:justify">Once you leave our website or are redirected to a
+                                    third-party website or application, you are no longer governed by this Privacy
+                                    Policy or our website’s Terms of Service.</p>
+
+                                <p style="text-align:justify">Links : When you click on links on our website, they may
+                                    direct you away from our site. We are not responsible for the privacy practices of
+                                    other sites and encourage you to read their privacy statements.</p>
+
+                                <h3 style="text-align:justify"><strong>6. SECURITY</strong></h3>
+
+                                <p style="text-align:justify">To protect your personal information, we take reasonable
+                                    precautions and follow industry best practices to make sure it is not
+                                    inappropriately lost, misused, accessed, disclosed, altered or destroyed.</p>
+
+                                <h3 style="text-align:justify"><strong>7. COOKIES</strong></h3>
+
+                                <p style="text-align:justify">We use cookies to maintain session of your user. It is not
+                                    used to personally identify you on other websites.</p>
+
+                                <h3 style="text-align:justify"><strong>8. AGE OF CONSENT</strong></h3>
+
+                                <p style="text-align:justify">By using this site, you represent that you are at least
+                                    the age of majority in your state or province of residence, or that you are the age
+                                    of majority in your state or province of residence and you have given us your
+                                    consent to allow any of your minor dependents to use this site.</p>
+
+                                <h3 style="text-align:justify"><strong>9. CHANGES TO THIS PRIVACY POLICY</strong></h3>
+
+                                <p style="text-align:justify">We reserve the right to modify this privacy policy at any
+                                    time, so please review it frequently. Changes and clarifications will take effect
+                                    immediately upon their posting on the website. If we make material changes to this
+                                    policy, we will notify you here that it has been updated, so that you are aware of
+                                    what information we collect, how we use it, and under what circumstances, if any, we
+                                    use and/or disclose it.</p>
+
+                                <p style="text-align:justify">If our website is acquired or merged with another company,
+                                    your information may be transferred to the new owners so that we may continue to
+                                    sell products to you.</p>
+
+                                <h3 style="text-align:justify"><strong>10. QUESTIONS AND CONTACT INFORMATION</strong>
+                                </h3>
+
+                                <p style="text-align:justify">If you would like to: access, correct, amend or delete any
+                                    personal information we have about you, register a complaint, or simply want more
+                                    information contact our Privacy Compliance Officer at at
+                                    info@localyellowpages.co.inor by mail at: Localyellowpages.co.in</p>
+
+                                <div class="whitediv">&nbsp;</div>
+                            </div>
+                        </article>
+
+
+                    </div>
+                    <div class="col-lg-3 pull-lg-9 shad-bx">
+                        <div class="sidebar">
+                            <div class="">
+                                <ul class="side-list">
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                    <li><a href="feedback.html">Feedback</a></li>
+                                    <li><a href="faq.html">FAQs</a></li>
+                                    <li><a href="terms.html">Terms and Conditions</a></li>
+                                    <li><a href="privacy.html">Privacy Policy</a></li>
+                                </ul>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- single-post-section -->
+
+        <footer>
+            <div class="footer-top-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 style="color:white;">About</h4>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it .</p>
+                                <a href="#" style="color:#C96E0B; font-size:18px;">Read More</a>
+                                <!-- footer-social-block -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title">Useful Links</h4>
+                                <ul class="footer-content-list">
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            About ListingGEO
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            How it Works
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            Exclusive Listings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            Popular Locations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            Contact us
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title">Catagories</h4>
+                                <ul class="footer-content-list">
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            User Log in
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            User Registration
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            Add Listing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            Favorite Lisitings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            Pricing Plans
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 style="color:white;">Address</h4>
+                                <p class="address">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> G - 55, Basement, Masjid Moth,
+                                    Greater Kailash - II, New Delhi - 110048, INDIA
+                                </p>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i> +1-0000-000-000</p>
+                                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> info@example.com</p>
+                                <div class="footer-social-block" style="font-size:20px;margin-top:10px;">
+                                    <span>
+                                        Folow us:
+                                    </span>
+                                    <ul class="social">
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- footer-social-block -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 push-md-6">
+                            <ul class="footer-nav">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        Legal
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        Terms of Use
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 pull-md-6">
+                            <p class="copyright-text">Copyright 2022, <a
+                                    href="javascript:void(0)">FirstPointCreations</a>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.bxslider.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/lobipanel.min.js"></script>
+    <script src="assets/js/jquery.accordion.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <!-- Tinymce-JS -->
+    <script src="assets/js/tinymce/tinymce.min.js"></script>
+    <!-- Google-map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
+    <script src="assets/js/gmap3.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        $('#map_widget').gmap3({
+            map: {
+                options: {
+                    zoom: 5,
+                    center: [41.785091, -73.968285],
+                    mapTypeControl: true,
+                    mapTypeControlOptions: {
+                        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+                    },
+                    mapTypeId: "style1",
+                    mapTypeControlOptions: {
+                        mapTypeIds: [google.maps.MapTypeId.ROADMAP, "style1"]
+                    },
+                    navigationControl: true,
+                    scrollwheel: false,
+                    streetViewControl: true
+                }
+            },
+            marker: {
+                latLng: [40.785091, -73.968285],
+                options: {
+                    animation: google.maps.Animation.BOUNCE,
+                    icon: 'images/markers/small-marker.png'
+                }
+            },
+            styledmaptype: {
+                id: "style1",
+                options: {
+                    name: "Style 1"
+                },
+
+            }
+        });
+    </script>
+</body>
+
+</html>

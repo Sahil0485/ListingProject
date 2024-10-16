@@ -1,0 +1,104 @@
+
+/*
+|----------------------------------------------------------------------------
+| 22. Tab Style
+|----------------------------------------------------------------------------
+*/
+
+@import "../variable";
+@import "../mixins";
+.tab-block.box-widget{
+	background: transparent;
+	border: none;
+}
+.tab-common{
+	.nav-tabs{
+		background: none;
+		border: none;
+		li a{
+			padding: 13px;
+			line-height: 100%;
+		}
+	}
+	.nav-tabs.flex-column{
+		li a.vertical-btn{
+			padding: 0;
+			line-height: 100%;
+		}
+	}
+	.btn{
+		border-radius: 0;
+		color: $light_dark;
+		background: $white_clr;
+		border: 1px solid $border_clr;
+		
+		&:hover,
+		&:focus,
+		&:active{
+			border: 1px solid transparent;
+			background: $primary_clr;
+		}
+	}
+	
+	.tab-content{
+		padding: 30px;
+		background: $white_clr;
+		border: 1px solid $border_clr;
+	}
+	p{
+		margin-bottom: 0;
+	}
+	h5{
+		margin-bottom: 15px;
+	}
+	
+}
+a.btn.btn-primary.btn-raised.waves-effect.vertical-btn.active,
+a.btn.btn-primary.btn-raised.waves-effect.vertical-btn:hover,
+a.btn.btn-primary.btn-raised.waves-effect.vertical-btn:focus,
+a.btn.btn-primary.btn-raised.waves-effect.vertical-btn:active{
+	box-shadow: none;
+}
+.nav-tabs{
+	.btn.btn-raised.btn-primary,
+	.btn:not(.btn-raised):not(.btn-link).active.btn-primary,
+	.btn:not(.btn-raised):not(.btn-link):active.btn-primary,
+	.btn:not(.btn-raised):not(.btn-link):focus.btn-primary,
+	.btn:not(.btn-raised):not(.btn-link):hover.btn-primary{
+		background: $white_clr;
+	}
+	.btn.btn-raised.btn-primary{
+		color: $lime_dark_clr;
+		&:hover{
+			color: $white_clr;
+		}
+	}
+	.btn.btn-raised.btn-primary.active{
+		color: $white_clr;
+		background: $primary_clr;
+	}
+}
+.tab-one{
+	.btn{
+		width: 110px;
+	}
+}
+.tab-two{
+	.btn{
+		width: 50px;
+		height: 40px;
+	}
+}
+.tab-three,
+.tab-four{
+	.row{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	[class*='col-']{
+		padding: 0;
+	}
+	.btn.btn-lg{
+		width: 164px;
+	}
+}

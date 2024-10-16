@@ -1,0 +1,32 @@
+
+/*
+|----------------------------------------------------------------------------
+| 17. Vector-map Style
+|----------------------------------------------------------------------------
+*/
+
+@import "../variable";
+
+.vector-map{
+	background: transparent;
+	width: 100%;
+}
+.world-vector-map{
+	height: 580px;
+}
+.us-vector-map,
+.australia-vector-map,
+.france-vector-map,
+.uk-vector-map,
+.india-vector-map,
+.canada-vector-map{
+	height: 400px; 
+}
+.dashboard-worldmap{
+	height: 400px;
+}
+.amcharts-chart-div{
+	a{
+		display: none !important;
+	}
+}

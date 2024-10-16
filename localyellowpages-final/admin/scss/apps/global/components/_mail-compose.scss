@@ -1,0 +1,126 @@
+
+/*
+|----------------------------------------------------------------------------
+| 25. Mail-compose Style
+|----------------------------------------------------------------------------
+*/
+
+@import "../variable";
+@import "../mixins";
+
+.form-common{
+	.mce-panel{
+		background: transparent;
+	}
+	.mce-statusbar.mce-last{
+		display: none;
+	}
+	.mce-btn{
+		background: #acb7bf;
+		border-radius: 10px;
+		padding: 4px 10px;
+	}
+	.mce-ico,
+	.mce-btn .mce-txt{
+		color: $white_clr;
+	}
+	.mce-caret{
+		border-top: 4px solid $white_clr;
+	}
+	.mce-btn-group:not(:first-child){
+		border: none;
+	}
+	.mce-panel{
+		border: none;
+	}
+	#mce_0_ifr{
+		border: 1px solid $border_clr;
+		border-top: none;
+		width: 99.8%;
+	}
+	.mce-stack-layout-item.mce-first{
+		padding: 9px 0 9px 9px;
+		background: #f5f5f5;
+		border-radius: 10px 10px 0 0;
+	}	
+}
+.inbox-compose-block{
+	.compose-title{
+		background: #f5f5f5;
+		padding: 20px 30px;
+		border-radius: 4px 4px 0 0;
+		h5{
+			margin: 0;
+		}
+	}
+	.compose-form-area{
+		padding: 30px;
+		border: 1px solid $border_clr;
+		border-top: none;
+	}
+}
+.compose-form-area{
+	.btn{
+		i.fa{
+			margin-right: 7px;
+		}
+	}
+}
+
+.drag-and-drope-block{
+	h6{
+		font-size: 16px;
+		font-weight: 600;
+		color: $light_dark;
+		margin-bottom: 16px;
+	}
+	.ajax-upload-dragdrop{
+		height: 120px;
+		width: 270px;
+		border-radius: 5px;
+		position: relative;
+		padding: 44px 33px;
+		border: 1px dashed $border_clr;
+	}
+	.dz-default.dz-message{
+		position: relative;
+		height: 100%;
+		width: 100%;
+		cursor: pointer;
+		text-align: center;
+		span{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 50%;
+			font-size: 14px;
+			color: $deep_gray;
+			transform: translateY(-15px);
+		}
+	}
+	.ajax-file-upload{
+		margin: 0 8px 5px 0;
+		height: 30px;
+		box-shadow: none;
+		background: $primary_clr;
+	}
+	.ajax-file-upload-statusbar{
+		border: 1px solid $success_clr;
+	}
+	.ajax-file-upload-bar{
+		background: $success_clr;
+	}
+}
+.drag-and-drope-block.full{
+	.ajax-upload-dragdrop{
+		width: 70%;
+		margin: 0 auto;
+		height: 300px;
+		padding: 120px 33px;
+		text-align: center;
+	}
+}
+.drag-drop-full-block{
+	padding-top: 80px;
+	min-height: 550px;
+}

@@ -1,0 +1,254 @@
+/*
+|----------------------------------------------------------------------------
+| 2. Apps Common Styles
+|----------------------------------------------------------------------------
+*/
+
+@import "./variable";
+@import "./mixins";
+
+.box-widget{
+	background: $white_clr;
+	border: 1px solid transparent;
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0 0px 20px -2px rgba(197, 197, 197, 0.75);
+	-moz-box-shadow: 0 0px 20px -2px rgba(197, 197, 197, 0.75);
+	box-shadow: 0 0px 20px -2px rgba(197, 197, 197, 0.75);
+}
+.bfh-selectbox-options{
+	ul li:first-child{
+		display: none;
+	}
+}
+.dashBoard-section-2{
+	.box-widget{
+		padding: 10px 20px 20px 20px;
+		margin-bottom: 20px;
+	}
+	.dasboard-doghunt-chart{
+		padding: 50px 20px 20px 20px;
+	}
+}
+
+/*--- Pannel Style ---*/
+.lobipanel{
+	margin-bottom: 0;
+}
+.panel{
+	box-shadow: none;
+	border-radius: 0;
+}
+.panel-body{
+	padding: 30px;
+}
+.chats-panel-body{
+	padding: 30px 20px;
+}
+.activity-panel-body{
+	padding-top: 50px;
+}
+.panel.panel-default>.panel-heading,
+.panel>.panel-heading{
+	background: $lime_gray;
+	padding-top: 13px;
+	border-bottom: 1px solid transparent;
+}
+.lobipanel>.panel-heading>.panel-title,
+.panel-title h4{
+	font-size: 18px;
+	font-weight: 400;
+	color: $lime_dark_clr;
+}
+.lobipanel.panel-unpin,
+.lobipanel.panel-expanded{
+	background: #fff;
+}
+.lobipanel .panel-heading .dropdown .dropdown-menu>li>a:focus:hover,
+.lobipanel .panel-heading .dropdown .dropdown-menu>li>a:hover{
+	text-shadow: none;
+	background: transparent;
+}
+.nmbr-statistic-block{
+	padding: 30px 30px 30px 30px;
+	min-height: 170px;
+	position: relative;
+	&:before{
+		content: '';
+		width: 100%;
+		height: 1px;
+		background: $border_clr;
+		top: 50%;
+		left: 0;
+		position: absolute;
+	}
+	.nmbr-statistic-icon{
+		position: absolute;
+		color: $white_clr;
+		font-size: 30px;
+		height: 55px;
+		width: 55px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 47px;
+		border: 5px solid $white_clr;
+		background: $primary_clr;
+		transform: translateY(-30px);
+		top: 50%;
+		left: 30px;
+		-webkit-box-shadow: 0px 0px 0px 1px $border_clr;
+		-moz-box-shadow: 0px 0px 0px 1px $border_clr;
+		box-shadow: 0px 0px 0px 1px $border_clr;
+	}
+	.a-meta-title{
+		font-size: 18px;
+		font-weight: 400;
+		.highlight-text{
+			width: 45px;
+			padding: 3px 5px;
+			font-size: 14px;
+			color: $white_clr;
+			border-radius: 10px;
+			margin-left: 8px;
+		}
+	}
+	.number{
+		display: block;
+		font-size: 40px;
+		margin-bottom: 48px;
+		font-weight: 300;
+	}
+	.nmbr-statistic-info{
+		position: absolute;
+		left: 37%;
+		top: 32px;
+	}
+}
+.user-statistic{
+	.highlight-text{
+		background: $warning_two_clr;
+	}
+}
+.visitors-statistic{
+	.highlight-text{
+		background: $primary_clr;
+	}
+}
+.sales-statistic{
+	.highlight-text{
+		background: $warning_clr;
+	}
+}
+.Subscribers-statistic{
+	.highlight-text{
+		background: $info_clr;
+	}
+}
+.dashBoard-section-2{
+	display: inline-block;
+	width: 100%;
+}
+
+
+/*--- Widget page style ---*/
+
+.page-banner{
+	position: relative;
+	padding: 100px 0;
+	width: 100%;
+	background: url(../images/misc/banner_bg.jpg) center center;
+	&:before{
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+	}
+}
+.banner-logo-block{
+	text-align: center;
+	position: relative;
+	z-index: 9;
+}
+.apps-container-wrap.widget-page{
+	margin-top: 90px;
+}
+.widget-form-block{
+	width: 600px;
+	position: relative;
+	z-index: 99;
+	margin: -70px auto 0 auto;
+	.box-widget{
+		padding: 50px 70px;
+	}
+}
+.widget-block-title{
+	text-align: center;
+	h3{
+		font-size: 30px;
+		color: $lime_dark_clr;
+	}
+	p{
+		letter-spacing: 1.6px;
+		color: $light_dark;
+		font-weight: 500;
+	}
+}
+.widget-form-block{
+	.form-common .form-group.password-group{
+		    margin: 0 0 10px 0;
+	}
+}
+
+.condition-text{
+	a{
+		color: $primary_clr;
+		text-decoration: underline;
+	}
+}
+.lock-screen-form{
+	.session-thumb{
+		display: block;
+		margin-bottom: 30px;
+		text-align: center;
+		img{
+			height: 90px;
+			width: 90px;
+			border-radius: 50%;
+		}
+	}
+	.form-btn-block{
+		text-align: center;
+		.btn{
+			width: 210px;
+		}
+		.btn-block{
+			border-radius: 30px;
+		}
+	}
+}
+
+.form-common.lock-screen-form{
+	.form-group{
+	input[type=password]{
+			border-radius: 30px;
+		}
+	}
+}
+.widget-page{
+	.container-fluid{
+		padding: 0;
+	}
+}
+
+
+/*--- Input-Mask page style ---*/
+.form-block.input-mask-block{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.footer{
+	margin-top: 40px;
+}

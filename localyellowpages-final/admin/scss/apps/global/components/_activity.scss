@@ -1,0 +1,86 @@
+
+/*
+|----------------------------------------------------------------------------
+| 5. Activity Style
+|----------------------------------------------------------------------------
+*/
+
+@import "../variable";
+.activity-block-area{
+	padding-left: 10px;
+}
+.activity-list{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	list-style: none;
+	&:before{
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 1px;
+		left: 0;
+		bottom: -23px;
+		background: $border_clr;
+	}
+	li{	
+		position: relative;
+		padding-left: 27px;
+		margin-bottom: 30px;
+		&:before{
+			position: absolute;
+			content: '';
+			height: 12px;
+			width: 12px;
+			background: #fff;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			left: -5px;
+			top: 6px;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	li.primary{
+		&:before{
+			background: $primary_clr;
+			-webkit-box-shadow: 0px 0px 0px 5px rgba(94,183,255,0.3);
+			-moz-box-shadow: 0px 0px 0px 5px rgba(94,183,255,0.3);
+			box-shadow: 0px 0px 0px 5px rgba(94,183,255,0.3);
+		}
+	}
+	li.warning{
+		&:before{
+			background: $warning_clr;
+			-webkit-box-shadow: 0px 0px 0px 5px rgba(255,121,121,0.3);
+			-moz-box-shadow: 0px 0px 0px 5px rgba(255,121,121,0.3);
+			box-shadow: 0px 0px 0px 5px rgba(255,121,121,0.3);
+		}
+	}
+	li.success{
+		&:before{
+			background: $success_clr;
+			-webkit-box-shadow: 0px 0px 0px 5px rgba(131,233,210,0.3);
+			-moz-box-shadow: 0px 0px 0px 5px rgba(131,233,210,0.3);
+			box-shadow: 0px 0px 0px 5px rgba(131,233,210,0.3);
+		}
+	}
+	li.warning-two{
+		&:before{
+			background: $warning_two_clr;
+			-webkit-box-shadow: 0px 0px 0px 5px rgba(255,206,46,0.3);
+			-moz-box-shadow: 0px 0px 0px 5px rgba(255,206,46,0.3);
+			box-shadow: 0px 0px 0px 5px rgba(255,206,46,0.3);
+		}
+	}
+	li{
+		span{
+			font-size: 14px;
+			color: $deep_gray;
+		}
+		p{
+			margin-bottom: 0;
+		}
+	}
+}

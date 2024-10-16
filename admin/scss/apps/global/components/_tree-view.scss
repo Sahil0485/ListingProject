@@ -1,0 +1,150 @@
+/*
+|----------------------------------------------------------------------------
+| 21. Tree-view Style
+|----------------------------------------------------------------------------
+*/
+
+@import "../variable";
+@import "../mixins";
+.treeview-common{
+	ul:before{
+		content: '';
+		position: absolute;
+		top: -18px;
+		height: 111%;
+		width: 1px;
+		border-left: 1px solid #8d8d8d;
+	}
+	.parent-ul:before{
+		height: 102%;
+		top: -2px;
+	}
+}
+.tree,
+.tree ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+	position: relative;
+}
+.tree ul {
+    margin-left: -17px;
+    position: relative;
+    margin-top: -6px;
+}
+.tree ul ul {
+    margin-left: -18px;
+}
+.tree li {
+    margin:0;
+    padding:0 37px;
+    line-height: 2em;
+    color: $light_dark;
+    font-weight:700;
+    position:relative;
+	margin: 15px 0;
+	padding-top: 3px;
+	a{
+		color: $light_dark;
+		text-decoration: none;
+	}
+	&:before{
+		content: '';
+		height: 10px;
+		width: 12px;
+		position: absolute;
+		left: 0;
+		top: 7px;
+		border-bottom: 1px solid #8d8d8d;
+	}
+	&:after{
+		content: '';
+		height: 15px;
+		width: 15px;
+		position: absolute;
+		left: 12px;
+		top: 10px;
+		border: 1px solid #8d8d8d;
+	}
+}
+.tree ul li:before{
+	
+}
+
+.indicator:before{
+	content: "\e61a";
+	position: absolute;
+	left: 14px;
+    top: 3px;
+    font-size: 11px;
+	font-style: normal;
+    font-family: 'themify';
+	color: #8d8d8d;
+}
+li.active>.indicator:before{
+	content: "\e622";
+}
+.tree li button,
+.tree li button:active, 
+.tree li button:focus {
+    text-decoration: none;
+    color:#369;
+    border:none;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+}
+.treeview-dotted{
+	.tree li{
+		&:after{
+			border-style: dotted;
+		}
+		&:before{
+			border-bottom: 1px dotted #8d8d8d;
+		}
+	}
+	ul:before{
+		border-left: 1px dotted #8d8d8d;
+	}	
+}
+.treeview-common.circled{
+	.tree li:after{
+		border-radius: 50%;
+	}
+}
+.treeview-common.folder{
+	ul.parent-ul:before{
+		content: none;
+	}
+	.parent-list{
+		&:before{
+			content: none;
+		}
+	}
+	.tree li:after{
+		content:"\f114";
+		font-size: 16px;
+		top: 3px;
+		border: none;
+		font-family:'FontAwesome';
+	}
+	.treeview-common ul:before{
+		content: none;
+	}
+	i.indicator{
+		display: none;
+	}
+	.tree li.has-child:after{
+		content:"\f115";
+	}
+	
+}
+.treeview-common.folder.folder-fill{
+	.tree li:after{
+		content:"\f07b";
+	}
+	.tree li.has-child:after{
+		content:"\f07c";
+	}
+}
